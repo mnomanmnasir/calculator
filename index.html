@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+   
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+   
+    <script>
+const firebaseConfig = {
+    apiKey: "AIzaSyCTeC4cWP14YYVQ_qwb6YVKbmMzdXApRkM",
+    authDomain: "calcuapp-d326c.firebaseapp.com",
+    databaseURL: "https://calcuapp-d326c-default-rtdb.firebaseio.com",
+    projectId: "calcuapp-d326c",
+    storageBucket: "calcuapp-d326c.appspot.com",
+    messagingSenderId: "405346827071",
+    appId: "1:405346827071:web:96d418c63762f823e0318a",
+    measurementId: "G-NPR01WBWFW"
+      };
+
+
+      firebase.initializeApp(firebaseConfig);
+
+      //   const analytics = getAnalytics(app);
+    </script>
+
+
+</head>
+<body>
+
+    <!-- Onclick  > (this is event on javascript) -->
+
+    <!-- <a href = "#" onclick="alert('Hello World')">Click Me</a>  -->
+    <!-- <a href = "#" onclick="foo('Hello!')">Click Me</a>  -->
+    <!-- <button onclick="clickBtn()">Click Me</button> -->
+    
+     <!-- <img onmousemove="console.log('move')" onmouseout="console.log('out')" onmouseover="console.log('Over')" src="https://tse4.mm.bing.net/th?id=OIP.QdlJEi-eqT531zf0hSWvUwHaE8&pid=Api&P=0&w=276&h=184" alt=""> -->
+
+      <!-- <input id="xyz" type="text" onfocus="this.style.background='yellow'" onblur="this.style.background='pink'"> -->
+
+     <!-- <button onclick="getName()">Click</button> -->
+  
+
+  <!--   
+  <p id="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam accusamus sunt, ea maiores, doloremque consequatur laborum numquam id harum voluptatibus, voluptatum aperiam dolores obcaecati. Quisquam inventore suscipit eaque voluptatem aut!
+
+
+  </p>
+    <p id="pera">
+        Lorem ipsum dolor, sit amet consectetur <a href="#" onclick="readMore()">readmore</a>     
+    </p>
+ -->
+
+
+<!-- <img src="images/Stunning.jpg" class="className" id="car" onclick="big()" alt=""> -->
+ 
+<!-- 
+<img src="images/Stunning.jpg" 
+onmouseout="changeImage('img','images/Stunning.jpg')"
+onmouseover="changeImage('img','images/image2.jpg')" id="img" alt=""> -->
+
+
+<!--  
+ <img src="images/image2.jpg" 
+
+onclick="changeImage()" -->
+
+<!-- id="img" alt="">   --> 
+
+<!-- 
+<img src="images/Stunning.jpg" 
+
+onclick="change()"
+
+id="im" alt="">   -->
+
+ <!--
+ <p onclick="changeImage()" id="para">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, optio obcaecati! Minus facere dolorum similique sapiente porro mollitia, eveniet quisquam, fugit, alias ipsum labore rerum cum debitis obcaecati ut iusto! -->
+
+<!-- </p>  -->
+
+
+
+<!-- <div id="parent">
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur quos, unde eum necessitatibus iure similique explicabo eaque et eligendi illum suscipit alias nesciunt? Officiis accusamus adipisci optio culpa perspiciatis.
+</p>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur quos, unde eum necessitatibus iure similique explicabo eaque et eligendi illum suscipit alias nesciunt? Officiis accusamus adipisci optio culpa perspiciatis.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur quos, unde eum necessitatibus iure similique explicabo eaque et eligendi illum suscipit alias nesciunt? Officiis accusamus adipisci optio culpa perspiciatis.
+</p>
+
+</div>
+
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur quos, unde eum necessitatibus iure similique explicabo eaque et eligendi illum suscipit alias nesciunt? Officiis accusamus adipisci optio culpa perspiciatis.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur quos, unde eum necessitatibus iure similique explicabo eaque et eligendi illum suscipit alias nesciunt? Officiis accusamus adipisci optio culpa perspiciatis.
+</p>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti aspernatur quos, unde eum necessitatibus iure similique explicabo eaque et eligendi illum suscipit alias nesciunt? Officiis accusamus adipisci optio culpa perspiciatis.
+</p> -->
+
+
+
+
+
+
+
+
+
+     
+            
+            <!-- Calculator -->
+
+            
+        <div class="main" id="image">   
+
+        
+            <div>
+            <input type="text" id="result" class="result">
+
+            </div>
+            <div>
+                <button class="clearBtn" onclick="clearResult()">C</button>
+               <button class="clearBtn" onclick='getNumber("(")'>(</button>
+               <button class="clearBtn" onclick='getNumber(")")'>)</button>
+               <button class="clearBtn" onclick='getNumber("/")'>/</button>
+             </div>
+            <div>
+           
+                <button class="Btn" onclick="getNumber('1')">1</button>
+                <button class="Btn" onclick="getNumber('2')">2</button>
+                <button class="Btn" onclick="getNumber('3')">3</button>
+                <button class="Btn" onclick="getNumber('+')">+</button>
+
+                 </div>
+            <div>
+                <button class="Btn" onclick="getNumber('4')">4</button>
+                <button class="Btn" onclick="getNumber('5')">5</button>
+                <button class="Btn" onclick="getNumber('6')">6</button>
+                <button class="Btn" onclick="getNumber('-')">-</button>
+            </div>
+            <div>
+                <button class="Btn" onclick="getNumber('7')">7</button>
+                <button class="Btn" onclick="getNumber('8')">8</button>
+                <button class="Btn" onclick="getNumber('9')">9</button>
+                <button class="Btn" onclick="getNumber('*')">x</button>
+            </div>
+
+            <div>
+                <button class="halfBtn" onclick="getNumber('0')">0</button>
+                <button class="halfBtn" onclick="getNumber('00')">00</button>
+                <button class="halfBtn" onclick="getNumber('.')">.</button>
+                <button class="halfBtn" onclick="getResult()">=</button>
+          <!-- <button>C</button> -->
+                <!-- <button>C</button> --> 
+            </div>
+
+       </div>       
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+       <div id="papa">
+        
+        assdasdsdssdsdsdsd
+
+        <p id="first1">first Son</p>
+        <p id="second2">Second Son</p>
+        <p id="third3">Third Son</p> -->
+       <!-- </div> -->
+
+
+
+
+
+
+
+
+ <!-- <p class="abc" id="p1">  -->
+
+        <!-- this is example -->
+       <!-- </p> - -->
+
+        <!-- <div id="main">  -->
+       <!-- </div> --> 
+       <!-- <div id="messages">
+
+       </div>
+
+       <input type="text" id="val">
+       <button onclick="addMessage()">Send</button>
+ -->
+
+
+<!-- 
+       <div>
+
+
+        <img src="images/shoes.jpg" alt="">
+
+        <h6>Branded shoes</h6>
+        <span>Rs:3000</span>
+        <br />
+        <button>Add to Cart</button>
+    </div> -->
+
+
+
+
+    
+
+
+
+
+
+<!-- 
+    <div>
+        <input type="text" id="name" placeholder="name">
+        <br>
+        <input type="text" id="roll" placeholder="roll">
+        <br>
+        <button onclick="saveData()">Save Data</button>
+    </div> -->
+
+    
+<script src="app.js"></script>
+
+
+
+</body> 
+
+</html>
