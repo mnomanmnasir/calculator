@@ -10,12 +10,12 @@ body{
 
 .main{
     border: 4px solid darkgrey;
-    width: 250px ;
+    width: 290px ;
     margin: 0 auto;
     margin-top: 150px;
 
     height: 250px;
-    background-color: black;
+    background-color: blue;
    
     
     /* background-size: vw !important; */
@@ -28,21 +28,21 @@ body{
 
     margin: 35px ;
     margin-top: 25px;
-    margin-left: 17px;
+    margin-left: 27px;
     height: 30px; 
-    background-color: grey;
-    color: #fff;
+    background-color: #fff;
+    color: green;
     border: 2px solid rgb(230, 223, 223);
 }
 
 .clearBtn{ 
-    background-color: grey;
+    background-color: #fff;
     width: 40px;
     transition: 0.5s;
 
     margin-top: -10px ;
     /* margin: 3px; */
-    margin: 3px 0px 0px 15px;
+    margin: 3px 5px 0px 15px;
 
 }
 
@@ -52,11 +52,11 @@ body{
 
 
 .Btn{
-    background-color: gray;
+    background-color: #fff;
     width: 40px;
     padding: 2px;
     margin-top: 10px ;
-    margin: 3px 0px 0px 15px;
+    margin: 3px 5px 0px 15px;
     text-align: center;
     transition: 0.5s;
 }
@@ -77,8 +77,8 @@ body{
 
 
 .halfBtn{
-    background-color: grey;
-    margin: 3px 0px 0px 15px;
+    background-color: #fff;
+    margin: 3px 5px 10px 15px;
 
     width: 40px ; 
     /* margin: 3px; */
